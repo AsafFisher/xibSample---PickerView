@@ -7,12 +7,23 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "PickerController.h"
+@interface ViewController ()<PickerControllerDelegate>
 
 @end
 
 @implementation ViewController
+@synthesize pickerController;
+- (IBAction)selectBirthDateAction:(id)sender {
+    
+[pickerController showOnView:self.view withType:PickerControllerTypeBirthdate];
+}
+- (IBAction)selectGenderAction:(id)sender {
+    [pickerController showOnView:self.view withType:PickerControllerTypeGender];
+}
+- (IBAction)selectOccupationAction:(id)sender {
+    [pickerController showOnView:self.view withType:PickerControllerTypeOccupation];
+}
 
 - (void)viewDidLoad
 {
@@ -25,5 +36,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void) pickerController:(PickerController *)controller finishedWithResult:(id)result{
+    NSLog(@"%@",result);
+    
+}
+- (void) didCancelPickerController:(PickerController *)controller{
+    NSLog(@"%@",controller);
+    
+}
+-(void)pickerController:(PickerController *)controller valueChanged:(id)newVal{
+    NSLog(@"%@",newVal);
+}
 @end

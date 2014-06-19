@@ -22,6 +22,8 @@
 		1A13FEC9194E113A00CCBB4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A13FEA8194E113A00CCBB4A /* UIKit.framework */; };
 		1A13FED1194E113A00CCBB4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A13FECF194E113A00CCBB4A /* InfoPlist.strings */; };
 		1A13FED3194E113A00CCBB4A /* xibSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A13FED2194E113A00CCBB4A /* xibSampleTests.m */; };
+		1A13FEDE194E12E800CCBB4A /* PickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A13FEDD194E12E800CCBB4A /* PickerController.m */; };
+		1A13FEE0194E17FB00CCBB4A /* PickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A13FEDF194E17FB00CCBB4A /* PickerController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		1A13FECE194E113A00CCBB4A /* xibSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xibSampleTests-Info.plist"; sourceTree = "<group>"; };
 		1A13FED0194E113A00CCBB4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A13FED2194E113A00CCBB4A /* xibSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xibSampleTests.m; sourceTree = "<group>"; };
+		1A13FEDC194E12E800CCBB4A /* PickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerController.h; sourceTree = "<group>"; };
+		1A13FEDD194E12E800CCBB4A /* PickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerController.m; sourceTree = "<group>"; };
+		1A13FEDF194E17FB00CCBB4A /* PickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +125,9 @@
 				1A13FEB9194E113A00CCBB4A /* Main_iPad.storyboard */,
 				1A13FEBC194E113A00CCBB4A /* ViewController.h */,
 				1A13FEBD194E113A00CCBB4A /* ViewController.m */,
+				1A13FEDF194E17FB00CCBB4A /* PickerController.xib */,
+				1A13FEDC194E12E800CCBB4A /* PickerController.h */,
+				1A13FEDD194E12E800CCBB4A /* PickerController.m */,
 				1A13FEBF194E113A00CCBB4A /* Images.xcassets */,
 				1A13FEAB194E113A00CCBB4A /* Supporting Files */,
 			);
@@ -233,6 +241,7 @@
 			files = (
 				1A13FEBB194E113A00CCBB4A /* Main_iPad.storyboard in Resources */,
 				1A13FEC0194E113A00CCBB4A /* Images.xcassets in Resources */,
+				1A13FEE0194E17FB00CCBB4A /* PickerController.xib in Resources */,
 				1A13FEB8194E113A00CCBB4A /* Main_iPhone.storyboard in Resources */,
 				1A13FEAF194E113A00CCBB4A /* InfoPlist.strings in Resources */,
 			);
@@ -256,6 +265,7 @@
 				1A13FEBE194E113A00CCBB4A /* ViewController.m in Sources */,
 				1A13FEB5194E113A00CCBB4A /* AppDelegate.m in Sources */,
 				1A13FEB1194E113A00CCBB4A /* main.m in Sources */,
+				1A13FEDE194E12E800CCBB4A /* PickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +480,7 @@
 				1A13FED8194E113A00CCBB4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A13FED9194E113A00CCBB4A /* Build configuration list for PBXNativeTarget "xibSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +489,7 @@
 				1A13FEDB194E113A00CCBB4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
