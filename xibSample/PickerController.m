@@ -55,6 +55,7 @@
     [self removeAction];
 }
 
+//removes all the views + dealloc them + animation
 -(void)removeAction{
     [UIView animateWithDuration:kAnimationDuration animations:^{
         bgView.alpha = 0;
@@ -65,9 +66,9 @@
         self.pickerArray = nil;
         self.mainView = nil;
     }];
-   
-   // pickerArray = nil;
     }
+
+// send to the pickerController delegate method the date picker date value.
 
 - (IBAction)datePickerValueChangedAction:(UIDatePicker *)sender {
     if([delegate respondsToSelector:@selector(pickerController:valueChanged:)]){
@@ -75,6 +76,8 @@
         
     }
 }
+
+//configur the UI by the picker controller type that was chosed.
 
 -(void)configureUI{
     switch (_pickerConteollerType){
@@ -99,6 +102,7 @@
     }
 }
 
+//make this class the owner of the xib file + customisation of the mainView and the bgView +add the bg view to the view that was sended it the msg.
 - (void)showOnView:(UIView *)view withType:(PickerControllerType)type optionalNibName:(NSString *)nibName{
     if([mainView superview] == nil)
     {
@@ -118,11 +122,12 @@
         mainView.center = bgView.center;
         [view addSubview:bgView];
         
+        // animate the view showUp
         [UIView animateWithDuration:kAnimationDuration animations:^{
             bgView.alpha = 0.65;
         }];
-         //mainView.center = view.center;
     }
+    
     [self configureUI];
    
 }
